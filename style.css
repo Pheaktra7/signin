@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background: radial-gradient(circle, rgba(63,94,251,1) 9%, rgba(252,70,107,1) 84%);    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 600px;
+    background-color: #98afc7;
+    overflow: hidden;
+}
+.container .btn-click{
+    width: 100%;
+    display: flex;
+}
+.container .btn-click h2{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.container .btn-click h2:first-child{
+    color: white;
+    background-color: rgb(63, 63, 244);
+}
+.container .btn-click h2:last-child{
+    color: rgb(63, 63, 244);
+    background-color: white;
+}
+.container .header{
+    width: 100%;
+    padding: 20px;
+}
+.container .header h2{
+    text-align: center;
+    color: white;
+}
+.container .form{
+    padding: 20px 25px;
+}
+.container .form .form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.container .form .form-group label{
+    background-color: rgb(63, 63, 244);
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    color: white;
+}
+.container .form .form-group input{
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+    border: none;
+}
+.container .form .checkbox{
+    color: white;
+    margin-bottom: 10px;
+}
+.container .form .button{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    color: rgb(63, 63, 244);
+    font-size: 16px;
+}
+.container .form .forget{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #eee;
+}
+.container .form .new-acc{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.container .form .new-acc p{
+    color: white;
+}
+.webpage{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-image: url(/login/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.webpage h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.webpage .logout{
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+    margin-left: 30px;
+}

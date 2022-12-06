@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-click">
+            <h2>Login</h2>
+            <h2>Register</h2>
+        </div>
+        <div class="header">
+            <h2>Login Form</h2>
+        </div>
+        <form class="form">
+            <div class="form-group">
+                <label for=""><i class="fa-solid fa-envelope"></i></label>
+                <input type="email"  id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for=""><i class="fa-solid fa-lock"></i></label>
+                <input type="password" id="pass" placeholder="Your Email">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id=""> Remember me
+            </div>
+            <button class="button">
+                <i class="fa-sharp fa-solid fa-share"></i>Login
+            </button>
+            <div class="forget">
+                <a href="#">Forget Password?</a>
+            </div>
+            <div class="new-acc">
+                <p>New Here?</p>
+                <a href="#">Join Us</a>
+            </div>
+        </form>
+    </div>
+    <div class="item-btn">
+        <div class="btn btn-fb"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+    </div>
+    <div class="webpage">
+        <h1>Welcome to Page</h1>
+        <div class="btn-logout">
+            <i class="fa-solid fa-right-from-bracket logout"></i>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    var email = $('#email');
+    var password = $('#pass');
+    $('.button').click(function(e){
+        e.preventDefault();
+        if(email.val() === "pheaktra190@gmail.com" && password.val() === "12345678"){
+            $('.webpage').css({'display':'block'});
+            $('.container , .item-box').css({'display':'none'});
+        }
+    });
+    $('.logout').click(function(){
+        $('.webpage').css({'display':'none'});
+        $('.container , .item-box').css({'display':'block'});
+    });
+});
+</script>
+</html>
